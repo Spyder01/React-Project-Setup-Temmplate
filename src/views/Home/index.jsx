@@ -4,7 +4,9 @@ import './styles/Home.scss';
 
 const Page = ()=>{
     return (
-        <></>
+        <h1>
+            Hello, world
+        </h1>
     );
 }
 
