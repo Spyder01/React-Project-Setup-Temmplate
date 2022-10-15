@@ -3,6 +3,10 @@ import path from "path";
 
 const pageName = process.argv[2];
 
+if (!fs.existsSync(path.join("./src/components"))) {
+    fs.mkdirSync(path.join("./src/components"))
+}
+
 fs.mkdir(path.join(`./src/components/${pageName}`), (err) => {
     if (err) throw err;
 
